@@ -26,7 +26,29 @@
 11.0 Sidebars
 */
 
-
+#cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+canvas {
+	/*border: 1px solid black;*/
+	margin: auto;
+	animation:fadeandmoveup ease 0.8s;
+}
+div.logo {
+	font-family: 'Raleway', sans-serif;
+	position: absolute;
+	letter-spacing: 1px;
+	color: #C61313;
+	font-weight: 500;
+	animation:fadeandmoveup ease 0.8s;
+}
+@keyframes fadeandmoveup
+{ 
+	from {margin-top:20px; opacity: 0;}
+	to {margin-top:0px; opacity: 1}
+}
 /**************************
 1.0
 *******************/

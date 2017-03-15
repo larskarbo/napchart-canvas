@@ -74,6 +74,7 @@ function importJson() {
 
 function start(db){
 	app.use(express.static('public'));
+	app.use('/js/lib', express.static('lib'));
 	app.use(favicon(__dirname + '/public/img/favicon.ico')); //serve favicon
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({
@@ -179,14 +180,19 @@ function start(db){
 		});
 	}
 
-	app.get('*', function (req, res) {
-		res.redirect('/');
-	});
 
+	// app.get('*', function (req, res) {
+	// 	res.send('404');
+	// });
 
 	var server_port = process.env.OPENSHIFT_NODEJS_PORT || 3000
 	var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0'
 	var server = app.listen(server_port,server_ip_address);
 
 	logger.info('Napchart started at %s:%s', server_ip_address, server_port)
+
+	var livereload = require('livereload');
+	var lrserver = livereload.createServer();
+	lrserver.watch([__dirname + "/lib/dist", __dirname + "/public"]);
+	
 }
