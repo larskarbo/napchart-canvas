@@ -11,4 +11,38 @@
   ':35729/livereload.js?snipver=1"></' + 'script>')
 </script> 
 
+<script src="/socket.io/socket.io.js"></script>
+<script>
+
+  window.mynapchart = Napchart.init(document.getElementById('canvas').getContext('2d'), {shape:'circle'})
+
+  mynapchart.setElements(
+    [
+      {start: 100, end: 480, type: 'busy'},
+      {start: 1000, end: 1020, type: 'sleep'}
+    ]
+  )
+
+  // mynapchart.setData({
+  //   nap: [],
+  //   core: [{start: 100, end: 480, state:'active'}, {start: 1000, end: 1020}],
+  //   busy: [{start: 700, end: 900}]
+  // })
+  //   console.log(document.getElementById('canvas'));
+
+  // var socket = io();
+  // socket.on('update', function(msg){
+  //   console.log(msg)
+  //   console.log(document.getElementById('canvas'));
+
+  //   var script = document.createElement('script');
+  //   script.setAttribute('src','/js/lib/dist/dist.js');
+  //   document.head.appendChild(script);
+  //   console.log(script)
+
+  //   window.mynapchart = Napchart.init(document.getElementById('canvas').getContext('2d'), {shape:'circle'})
+
+  // });
+</script>
+
 <!-- <bscript src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script> -->

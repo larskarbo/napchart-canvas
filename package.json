@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "browserify lib/chart/browsertest.js -o lib/dist/dist.js --debug",
-    "watch": "watchify lib/chart/browsertest.js -o lib/dist/dist.js --debug --verbose",
+    "watch": "watchify lib/chart/index.js -o lib/dist/dist.js --debug --verbose --ignore-watch=**/config.js",
+    "watch": "watchify lib/chart/index.js -o lib/dist/dist.js --debug --verbose",
     "start": "node script.js"
   },
   "main": "script.js",
@@ -12,13 +13,14 @@
     "body-parser": "*",
     "canvas": "^1.6.3",
     "ejs": "*",
-    "express": "~4.0.0",
+    "express": "^4.15.2",
     "mysql": "*",
     "nconf": "*",
     "prompt": "*",
     "sequelize": "*",
     "sequelize-import": "*",
     "serve-favicon": "*",
+    "socket.io": "^1.7.3",
     "winston": "*"
   },
   "repository": {
