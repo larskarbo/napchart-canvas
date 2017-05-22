@@ -5,7 +5,7 @@
     "watch": "watchify lib/chart/index.js -o lib/dist/dist.js --debug --verbose",
     "start": "node script.js"
   },
-  "main": "lib/dist/dist.js",
+  "main": "lib/chart/index.js",
   "name": "napchart",
   "version": "0.6.0",
   "description": "Polyphasic sleep visualizer",
