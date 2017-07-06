@@ -4,14 +4,10 @@
     "watch": "watchify lib/chart/index.js -o lib/dist/dist.js --debug --verbose"
   },
   "main": "lib/chart/index.js",
-  "name": "napchart",
-  "version": "0.6.0",
-  "description": "Polyphasic sleep visualizer",
+  "name": "napchart-canvas",
+  "version": "1.0.0",
+  "description": "Canvas helper library for napchart",
   "dependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/larskarbo/napchart"
-  },
   "devDependencies": {
     "standard": "^10.0.2"
   }
