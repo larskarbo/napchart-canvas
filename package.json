@@ -1,7 +1,5 @@
 {
   "scripts": {
-    "build": "browserify lib/chart/browsertest.js -o lib/dist/dist.js --debug",
-    "watch": "watchify lib/chart/index.js -o lib/dist/dist.js --debug --verbose"
   },
   "main": "lib/chart/index.js",
   "name": "napchart-canvas",
