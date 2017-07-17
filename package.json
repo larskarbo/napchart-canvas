@@ -4,7 +4,9 @@
   "name": "napchart-canvas",
   "version": "1.0.6",
   "description": "Canvas helper library for napchart",
-  "dependencies": {},
+  "dependencies": {
+    "auto-canvas": "^3.0.0"
+  },
   "devDependencies": {
     "standard": "^10.0.2"
   }
