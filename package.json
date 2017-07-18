@@ -2,7 +2,7 @@
   "scripts": {},
   "main": "lib/index.js",
   "name": "napchart-canvas",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Canvas helper library for napchart",
   "dependencies": {
     "auto-canvas": "^3.0.0"
